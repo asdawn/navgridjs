@@ -18,12 +18,19 @@ Currently there are implementations in pl/pgsql and Java.
 
 ### (2) Why use NavGrid ##
 
-1. A multi-scale gridset for spatial analysis
+With NavGrid, you can
+
+1. Get a multi-scale gridset for spatial analysis
 
 NavGrid provides a family of world-wide grids of *whole* width/height.
 
-1. To access telecom population data
-NavGrid provides access to a world-wide grid system. This grid system is adopt by many large data companies in China, for example, China Telecom, China Unicom,
+2. Access telecom population data formats
+
+NavGrid provides access to a world-wide grid system. This grid system is adopt by many large data companies in China, for example, China Telecom, China Unicom. You have to decode the gridID after get the datasets. This tool makes it easier.
+
+3. Make web mapping easier
+
+NavGrid can generate geometry (as GeoJSON or WKT) of a grid, and can generate grids touches a specified region. These functions are quite useful in thematic web maps.
 
 ### (3) Conceptions of NavGrid ###
 
