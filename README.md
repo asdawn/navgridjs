@@ -25,7 +25,9 @@ NavGrid provides a family of world-wide grids of *whole* width/height.
 1. To access telecom population data
 NavGrid provides access to a world-wide grid system. This grid system is adopt by many large data companies in China, for example, China Telecom, China Unicom,
 
-### Definitions of NavGrid ###
+### Conceptions of NavGrid ###
+
+There are only two important conceptions, *grid* and *gridID*.
 
 1. Grid
 
@@ -46,6 +48,10 @@ For one grid of size *s*, its' **start point** is the coordinates of the bottom-
 *Precisely, there should exists a patch of its' mathematical definition. In the plane, the top and right grids should contains the points in the top and right border line of the plane, or these points will be lost. It will be fixed in the next version of implementation.*
 
 + Grids of different size can be *aligned*
+
+
+ 
+ 2. gridID
  
 
 ## Why use navgridjs
