@@ -25,8 +25,18 @@ NavGrid provides a family of world-wide grids of *whole* width/height.
 1. To access telecom population data
 NavGrid provides access to a world-wide grid system. This grid system is adopt by many large data companies in China, for example, China Telecom, China Unicom,
 
-### **The Grid System** ###
-One **grid** is a square of *specified* width/height in the WGS 1984 coordinate system.
+### Definitions of NavGrid ###
+
+1. Grid
+
+One **grid** is a square of *specified* **size** (width/height) in the WGS 1984 coordinate system. 
+
++ Grids of them same size make a [partition](https://www.mathwords.com/p/partition_of_a_set.htm) of the longitude-latitude system.
+
+In NavGrid's design, grids of the same size can fully cover the plane `{(x,y)|x in [-180,180], y in [-90,90]}`. 
+
+For one grid of size *s*, its' **start point** is the coordinates of the bottom-left corner. Mathematically it contains points on the left and bottom borders, but do not contains points on the right or the top borders, that is, if its' start point is (x0,y0), the grid can be defined as {(x,y)|x in [x0,x0+s), y in [y0,y0+s)}.
+
 
 
  
